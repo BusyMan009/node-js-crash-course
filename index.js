@@ -3,6 +3,10 @@ const mongoose = require("mongoose");
 
 const app = express();
 
+const cors = require('cors');
+app.use(cors());
+
+
 const Article = require("./models/Article");
 
 mongoose
